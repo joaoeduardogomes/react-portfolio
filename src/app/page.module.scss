@@ -1,0 +1,65 @@
+$background-light: #fafafa;
+$foreground-light: #fff;
+
+$text-primary-light: #000;
+$text-secondary-light: #666;
+
+$button-primary-hover-light: #383838;
+$button-secondary-hover-light: #f2f2f2;
+$button-secondary-border-light: #ebebeb;
+
+$background-dark: #000;
+$foreground-dark: #000;
+
+$text-primary-dark: #ededed;
+$text-secondary-dark: #999;
+
+$button-primary-hover-dark: #ccc;
+$button-secondary-hover-dark: #1a1a1a;
+$button-secondary-border-dark: #1a1a1a;
+
+
+// .page {
+//   display: flex;
+//   min-height: 100vh;
+//   align-items: center;
+//   justify-content: center;
+//   font-family: var(--font-geist-sans);
+//   background-color: $background-light;
+// }
+
+.main {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: $foreground-light;
+  background: url('/images/bg-1.png') fixed no-repeat center;
+  background-size: cover;
+  padding: 120px 60px;
+}
+
+
+
+@media (max-width: 600px) {
+  .main {
+    padding: 48px 24px;
+  }
+}
+
+
+@media (prefers-color-scheme: dark) {
+  .logo {
+    filter: invert(1);
+  }
+
+  .page {
+    background-color: $background-dark;
+  }
+
+  .main {
+    background-color: $foreground-dark;
+  }
+}
