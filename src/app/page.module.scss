@@ -1,3 +1,5 @@
+@use "@/styles/variables" as v;
+
 $background-light: #fafafa;
 $foreground-light: #fff;
 
@@ -19,28 +21,32 @@ $button-secondary-hover-dark: #1a1a1a;
 $button-secondary-border-dark: #1a1a1a;
 
 
-// .page {
-//   display: flex;
-//   min-height: 100vh;
-//   align-items: center;
-//   justify-content: center;
-//   font-family: var(--font-geist-sans);
-//   background-color: $background-light;
-// }
+.page {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-geist-sans);
+  background-color: $background-light;
+  background: url('/images/bg-1.png') fixed no-repeat center;
+  background-size: cover;
+}
+
 
 .main {
   display: flex;
-  min-height: 100vh;
-  width: 100%;
+  width: 200px;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  background-color: $foreground-light;
-  background: url('/images/bg-1.png') fixed no-repeat center;
-  background-size: cover;
+  background-color: rgba(v.$color-4, 0.5);
   padding: 120px 60px;
 }
 
+.box {
+  border: 4px solid v.$color-white;
+  border-radius: 8px;
+}
 
 
 @media (max-width: 600px) {
@@ -50,16 +56,16 @@ $button-secondary-border-dark: #1a1a1a;
 }
 
 
-@media (prefers-color-scheme: dark) {
-  .logo {
-    filter: invert(1);
-  }
+// @media (prefers-color-scheme: dark) {
+//   .logo {
+//     filter: invert(1);
+//   }
 
-  .page {
-    background-color: $background-dark;
-  }
+//   .page {
+//     background-color: $background-dark;
+//   }
 
-  .main {
-    background-color: $foreground-dark;
-  }
-}
+//   .main {
+//     background-color: $foreground-dark;
+//   }
+// }

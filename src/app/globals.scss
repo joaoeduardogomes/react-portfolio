@@ -1,16 +1,11 @@
+@use "@/styles/variables" as v;
+
 $background-light: #ffffff;
 $foreground-light: #171717;
 
 $background-dark: #0a0a0a;
 $foreground-dark: #ededed;
 
-$color-1: #6E6AD9;
-$color-2: #9498F2;
-$color-3: #303A73;
-$color-4: #293040;
-$color-5: #F6C116;
-$color-6: #53A0FF;
-$color-7: #8C756A;
 
 
 :root {
@@ -37,7 +32,6 @@ body {
 
 body {
   color: var(--foreground);
-  background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
