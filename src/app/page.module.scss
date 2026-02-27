@@ -21,31 +21,43 @@ $button-secondary-hover-dark: #1a1a1a;
 $button-secondary-border-dark: #1a1a1a;
 
 
-.page {
-  display: flex;
+.container {
   min-height: 100vh;
-  align-items: center;
-  justify-content: center;
   font-family: var(--font-geist-sans);
   background-color: $background-light;
   background: url('/images/bg-1.png') fixed no-repeat center;
   background-size: cover;
 }
 
+.sidebar {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style: none;
+  }
+}
 
 .main {
-  display: flex;
   width: 200px;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  background-color: rgba(v.$color-4, 0.5);
   padding: 120px 60px;
+}
+
+.social {
+  width: 200px;
+  height: 200px;
 }
 
 .box {
   border: 4px solid v.$color-white;
   border-radius: 8px;
+  background-color: rgba(v.$color-4, 0.85);
 }
 
 
