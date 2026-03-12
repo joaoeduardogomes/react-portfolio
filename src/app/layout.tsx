@@ -1,8 +1,9 @@
+
 import type { Metadata } from "next";
 import { Quantico } from "next/font/google";
 import "./globals.scss";
 import styles from "./layout.module.scss";
-import Link from "next/link";
+import Navigation from "./components/Navigation";
 
 const quantico = Quantico({
   subsets: ["latin"],
@@ -25,34 +26,7 @@ export default function RootLayout({
       <body className={`${quantico.variable} ${quantico.variable}`}>
         <div className={styles.container}>
           <aside className={`${styles.sidebar} ${styles.box}`}>
-            <nav>
-              <ul>
-                <li>
-                  <Link href="/">About</Link>
-                </li>
-                <li>
-                  <Link href="/education">Education</Link>
-                </li>
-                <li>
-                  <Link href="/stack">Stack</Link>
-                </li>
-                <li>
-                  <Link href="/skills">Skills</Link>
-                </li>
-                <li>
-                  <Link href="/projects">Projects</Link>
-                </li>
-                <li>
-                  <Link href="/hobbies">Hobbies</Link>
-                </li>
-                <li>
-                  <Link href="/contact">Contact</Link>
-                </li>
-                <li>
-                  <Link href="/faq">FAQ</Link>
-                </li>
-              </ul>
-            </nav>
+            <Navigation />
           </aside>
 
           <main className={`${styles.main} ${styles.box}`}>
