@@ -1,0 +1,49 @@
+{
+    "sections": [
+        {
+            "title": "Formal Education",
+            "items": [
+                {
+                    "id": "pos-data",
+                    "name": "Postgraduate Certificate in Data Science",
+                    "institution": "Gran Faculdade"
+                },
+                {
+                    "id": "pos-cloud",
+                    "name": "Postgraduate Certificate in Full-Stack Development and Cloud Computing",
+                    "institution": "Gran Faculdade"
+                },
+                {
+                    "id": "gran-computerscience",
+                    "name": "Bachelor’s Degree in Computer Science",
+                    "institution": "Gran Faculdade (in progress)"
+                },
+                {
+                    "id": "ufrgs-translation",
+                    "name": "Bachelor's Degree in Translation",
+                    "institution": "Federal University of Rio Grande do Sul (UFRGS)"
+                }
+            ]
+        },
+        {
+            "title": "Selected Courses",
+            "items": [
+                {
+                    "id": "bootdev-backend",
+                    "name": "Back-end Developer Path (Python & TypeScript)",
+                    "institution": "Boot.dev (in progress)"
+                },
+                {
+                    "id": "obc-fullstack",
+                    "name": "Full-Stack JavaScript Developer",
+                    "institution": "OneBitCode"
+                },
+                {
+                    "id": "alura-sql",
+                    "name": "SQL with PostgreSQL",
+                    "institution": "Alura"
+                }
+            ]
+        }
+    ]
+}

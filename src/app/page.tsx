@@ -1,4 +1,10 @@
+import { Metadata } from "next";
 import styles from "./page.module.scss";
+
+export const metadata: Metadata = {
+    title: "João Eduardo",
+    description: "About João Eduardo, web developer focused on clean and maintainable code."
+}
 
 export default function About() {
   return (
@@ -11,7 +17,7 @@ export default function About() {
       </div>
 
       <table className={styles.infoTable}>
-        <caption className={styles.visuallyHidden}>Basic Information</caption>
+        <caption className="visually-hidden">Basic Information</caption>
         <tbody>
           <tr>
             <th scope="row">Name</th>
