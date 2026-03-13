@@ -18,7 +18,6 @@ export default function Stack() {
                     <ul>
                         {section.items.map(item => (
                             <li key={item}>
-                                {/* <img src={`/images/devicons/${item}.svg`} alt="" /> */}
                                 <Image
                                     src={`/images/devicons/${item}.svg`} width={imgSize} height={imgSize}
                                     alt={`${item} image`}
