@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 export default function About() {
   return (
     <>
-      <img src="/images/avatar-nobg.png" alt="" />
+      <img src="/images/avatar-nobg.png" alt="avatar" />
       <div className={styles['scoffee-bar']}>
         <p>Coffee</p>
         <p>80/100</p>
