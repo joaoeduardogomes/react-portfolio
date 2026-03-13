@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
     title: "Hobbies",
@@ -6,9 +7,20 @@ export const metadata: Metadata = {
 }
 
 export default function Hobbies() {
+    const width = 478;
+    const height = 164;
     return (
         <>
+            <h1 className="visually-hidden">Hobbies</h1>
+            <Image src="/images/treasure.jpg" width={width} height={height} alt="treasure image" />
 
+            <ul>
+                <li>Videogames & RPGs</li>
+                <li>Reading (tech & fiction)</li>
+                <li>Anime & manga</li>
+                <li>Japanese language & culture</li>
+                <li>Writing & translation</li>
+            </ul>
         </>
     )
 }
