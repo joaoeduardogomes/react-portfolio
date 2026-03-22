@@ -1,4 +1,4 @@
-type StackItem =
+export type StackItem =
     | "html"
     | "css"
     | "javascript"
