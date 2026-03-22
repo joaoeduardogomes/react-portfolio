@@ -1,4 +1,19 @@
-{
+export type EducationItem = {
+    id: string;
+    name: string;
+    institution: string;
+};
+
+export type EducationSection = {
+    title: string;
+    items: EducationItem[];
+};
+
+export type EducationData = {
+    sections: EducationSection[];
+};
+
+export const educationData: EducationData = {
     "sections": [
         {
             "title": "Formal Education",

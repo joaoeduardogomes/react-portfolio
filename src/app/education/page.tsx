@@ -1,20 +1,17 @@
-import rawData from '@/data/education.json'
+import { educationData}  from '@/data/education'
 import type { Metadata } from 'next';
-import type { EducationData } from "@/types/education"
 
 export const metadata: Metadata = {
     title: "Education",
     description: "Formal education and selected programming courses."
 }
 
-const data = rawData as EducationData;
-
 export default function Education() {
     return (
         <>
             <h1 className="visually-hidden">Education</h1>
 
-            {data.sections.map(section => (
+            {educationData.sections.map(section => (
                 <section key={section.title}>
                     <h2>{section.title}</h2>
 
