@@ -1,5 +1,5 @@
 import { Metadata } from "next"
-import data from "@/data/stack.json"
+import { stackData } from "@/data/stack"
 import Image from "next/image"
 
 export const metadata: Metadata = {
@@ -11,7 +11,7 @@ export default function Stack() {
     const imgSize = 40;
     return (
         <>
-            {data.sections.map(section => (
+            {stackData.sections.map(section => (
                 <section key={section.title.toLocaleLowerCase()}>
                     <h1 className="visually-hidden">Stack</h1>
                     <h2>{section.title}</h2>
