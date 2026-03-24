@@ -1,5 +1,10 @@
-import { experienceData } from "@/data/experience"
+import { Metadata } from "next";
+import { experienceData } from "@/data/experience";
 
+export const metadata: Metadata = {
+    title: "Experience",
+    description: "Professional and volunteer experience, including roles, responsibilities, and contributions."
+};
 
 export default function Experience() {
     return(
