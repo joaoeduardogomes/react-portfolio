@@ -14,6 +14,7 @@ export default function Navigation() {
         { href: "/projects", label: "Projects" },
         { href: "/hobbies", label: "Hobbies" },
         { href: "/contact", label: "Contact" },
+        { href: "/experience", label: "Experience" },
         { href: "/faq", label: "FAQ" }
     ];
 
