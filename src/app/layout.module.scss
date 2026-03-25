@@ -6,6 +6,7 @@
     // min-height: 90vh;
     // max-height: 100dvh;
     height: 800px;
+    // min-height: 0;
     margin: auto;
     font-family: var(--font-geist-sans);
     border: 2px solid red;
@@ -31,6 +32,7 @@
     grid-area: main;
     overflow-y: auto;
     max-height: 100%;
+    // min-height: 0;
 }
 
 .social {
