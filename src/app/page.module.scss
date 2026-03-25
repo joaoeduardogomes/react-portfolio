@@ -1,5 +1,68 @@
 @use "@/styles/variables" as v;
 
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+
+  .coffee-bar {
+    p {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    progress {
+      height: 16px;
+      appearance: none;
+      -webkit-appearance: none;
+      border: none;
+      border-radius: 5px;
+      overflow: hidden;
+
+      outline: 2px solid v.$color-7;
+      background-color: #fff;
+
+      &::-webkit-progress-bar {
+        background-color: #fff;
+      }
+
+      &::-webkit-progress-value {
+        background-color: v.$color-7;
+      }
+
+      &::-moz-progress-bar {
+        background-color: v.$color-7;
+      }
+    }
+  }
+
+}
+
+.info-table {
+  border-collapse: separate;
+  border-spacing: 16px 8px;
+
+  th {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: v.$color-6;
+  }
+
+  td {
+    font-size: 1.5rem;
+  }
+}
+
 
 @media (max-width: 600px) {
   .main {
