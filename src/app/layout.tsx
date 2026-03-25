@@ -4,6 +4,8 @@ import { Quantico } from "next/font/google";
 import "./globals.scss";
 import styles from "./layout.module.scss";
 import Navigation from "./components/Navigation";
+import Social from "./components/Social";
+
 
 const quantico = Quantico({
   subsets: ["latin"],
@@ -26,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${quantico.variable} ${quantico.variable}`}>
+      <body className={`${quantico.variable}`}>
         <div className={styles.container}>
           <aside className={`${styles.sidebar} ${styles.box}`}>
             <Navigation />
@@ -36,7 +38,9 @@ export default function RootLayout({
             {children}
           </main>
 
-          <aside className={`${styles.social} ${styles.box}`}></aside>
+          <aside className={`${styles.social} ${styles.box}`}>
+            <Social />
+          </aside>
         </div>
       </body>
     </html>

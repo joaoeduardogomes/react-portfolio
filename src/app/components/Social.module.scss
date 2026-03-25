@@ -1,0 +1,30 @@
+.social-links {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    min-height: 100%;
+    align-content: center;
+    gap: 1rem;
+    margin: 1rem;
+
+    .link {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;    
+        gap: 1rem;
+        width: fit-content;
+    }
+
+    #cv-text {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+}
+
+#version {
+    text-align: right;
+    position: absolute;
+    right: 10;
+    bottom: 10;
+}

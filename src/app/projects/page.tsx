@@ -31,7 +31,7 @@ export default function Projects() {
 
                 <ul>
                     {project.technologies.map(technology => (
-                        <li>
+                        <li key={technology}>
                             <abbr title={technology}>
                                 <Image
                                     src={`/images/devicons/${technology}.svg`}

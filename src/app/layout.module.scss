@@ -24,8 +24,6 @@
     justify-content: center;
     font-size: 2rem;
     grid-area: sidebar;
-
-    
 }
 
 .main {
@@ -36,8 +34,9 @@
 }
 
 .social {
-    height: 200px;
+    height: fit-content;
     grid-area: social;
+    position: relative; // por conta do #version
 }
 
 .box {
