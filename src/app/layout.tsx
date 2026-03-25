@@ -19,6 +19,9 @@ export const metadata: Metadata = {
     template: "%s | João Eduardo",
   },
   description: "Web developer portfolio",
+  icons: {
+    icon: "/images/avatar-nobg.png"
+  }
 };
 
 export default function RootLayout({
