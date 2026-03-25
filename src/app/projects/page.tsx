@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import { projectsData } from "@/data/projects";
 import Image from "next/image";
 import Link from "next/link";
+import styles from "./page.module.scss";
 
 export const metadata: Metadata = {
     title: "Projects",
@@ -9,8 +10,8 @@ export const metadata: Metadata = {
 }
 
 export default function Projects() {
-    const imgWidth = 220;
-    const imgHeight = 130;
+    const imgWidth = 300;
+    const imgHeight = 180;
     const devImg = 30;
     return (
         <>
@@ -24,6 +25,7 @@ export default function Projects() {
                     src={project.imageUrl}
                     width={imgWidth} height={imgHeight}
                     alt={`${project.name} image`}
+                    className={styles.thumbnail}
                 />
 
                 <Link href={project.codeLink} target="_blank">Code</Link>
