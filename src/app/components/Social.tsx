@@ -56,7 +56,7 @@ export default function Social() {
                         target="_blank"
                         className={styles.link}
                     >
-                        <span id={styles['cv-text']}>CV</span>
+                        <span className={styles['cv-text']}>CV</span>
                         <span>https://cv-joaogomes.vercel.app/</span>
                     </Link>
                 </li>

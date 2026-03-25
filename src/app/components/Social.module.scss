@@ -1,3 +1,5 @@
+@use "@/styles/variables" as v;
+
 .social-links {
     list-style: none;
     display: grid;
@@ -8,23 +10,54 @@
     gap: 1rem;
     margin: 1rem;
 
+    li {
+        width: fit-content;
+
+        &:hover,
+        &:focus-within {
+            span {
+                color: v.$color-white;
+                text-shadow: 0 0 8px rgba(v.$color-5, 0.6);
+            }
+
+            img {
+                filter: drop-shadow(0 0 6px rgba(v.$color-5, 0.45));
+                transform: scale(1.05);
+            }
+
+            .cv-text {
+                transform: scale(1.05);
+            }
+        }
+    }
+
     .link {
         display: flex;
         flex-wrap: wrap;
-        align-items: center;    
+        align-items: center;
         gap: 1rem;
         width: fit-content;
     }
 
-    #cv-text {
+    span {
+        transition: color 0.2s ease, text-shadow 0.2s ease;
+    }
+
+    img {
+        transition: filter 0.2s ease, transform 0.3s ease;
+    }
+
+    .cv-text {
         font-size: 2rem;
         font-weight: bold;
+        transition: filter 0.2s ease, transform 0.3s ease;
     }
 }
+
 
 #version {
     text-align: right;
     position: absolute;
-    right: 10;
-    bottom: 10;
+    right: 10px;
+    bottom: 10px;
 }
