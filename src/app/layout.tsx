@@ -1,6 +1,7 @@
 
 import type { Metadata } from "next";
-import { Quantico } from "next/font/google";
+import { Quantico, Yuji_Boku } from "next/font/google";
+import "./reset.scss";
 import "./globals.scss";
 import styles from "./layout.module.scss";
 import Navigation from "./components/Navigation";
@@ -12,6 +13,12 @@ const quantico = Quantico({
   weight: ["400", "700"], // importante
   variable: "--font-quantico",
 });
+
+const yujiBoku = Yuji_Boku({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-yuji"
+})
 
 export const metadata: Metadata = {
   title: {
@@ -31,7 +38,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${quantico.variable}`}>
+      <body className={`${quantico.variable} ${yujiBoku.variable}`}>
         <div className={styles.container}>
           <aside className={`${styles.sidebar} ${styles.box}`}>
             <Navigation />

@@ -45,11 +45,18 @@ export default function About() {
 
 
 
-      <h1>About Me</h1>
-      <p>
-        I'm a juniot full-stack web developer. I like to keep the front end simple and intuitive. On the back end, I organize the logic and data — the parts most people never see. I work mainly with Python and Flask, and I use JavaScript when it makes sense.
-      </p>
-      <p>自己紹介</p>
+      <h1 className={styles.about}>About Me</h1>
+
+      <div className={styles['description-wrap']}>
+        <p className={styles.description}>
+          I'm a juniot full-stack web developer. I like to keep the front end simple and intuitive. On the back end, I organize the logic and data — the parts most people never see. I work mainly with Python and Flask, and I use JavaScript for the front end.
+        </p>
+
+        <span className={styles['presentation-tag']}>
+          <span className={styles.presentation}>自己紹介</span>
+          <img src="/images/pin.png" alt="" aria-hidden="true" />
+        </span>
+      </div>
     </>
   );
 }
