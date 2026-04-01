@@ -1,5 +1,6 @@
 import { educationData}  from '@/data/education'
 import type { Metadata } from 'next';
+import styles from "./page.module.scss";
 
 export const metadata: Metadata = {
     title: "Education",
@@ -12,14 +13,14 @@ export default function Education() {
             <h1 className="visually-hidden">Education</h1>
 
             {educationData.sections.map(section => (
-                <section key={section.title}>
-                    <h2>{section.title}</h2>
+                <section key={section.title} className={styles.section}>
+                    <h2 className={styles.title}>{section.title}</h2>
 
-                    <ul>
+                    <ul className={styles.list}>
                         {section.items.map(item => (
                             <li key={item.id}>
-                                <p>{item.name}</p>
-                                <span>{item.institution}</span>
+                                <span className={styles['course-name']}>{item.name}</span>
+                                <span className={styles['institution-name']}>{item.institution}</span>
                             </li>
                         ))}
                     </ul>

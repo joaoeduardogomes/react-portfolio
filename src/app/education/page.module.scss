@@ -1,0 +1,27 @@
+@use "@/styles/variables" as v;
+
+.section:first-of-type {
+    margin-bottom: 2rem;
+}
+
+h2.title {
+    color: v.$color-6;
+    font-weight: bold;
+}
+
+ul.list {
+    list-style: disc;
+
+    span.course-name {
+        display: block;
+        font-weight: bold;
+        font-size: 1.1rem;
+    }
+
+    span.institution-name {
+        display: block;
+        &::before {
+            content: "— ";
+        }
+    }
+}
