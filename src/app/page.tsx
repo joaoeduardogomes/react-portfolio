@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import styles from "./page.module.scss";
+import CoffeeBar from "./components/CoffeeBar";
 
 export const metadata: Metadata = {
   title: "João Eduardo",
@@ -12,13 +13,7 @@ export default function About() {
       <section className={styles.info}>
         <div className={styles.user}>
           <img src="/images/avatar-nobg.png" alt="avatar" />
-          <div className={styles['coffee-bar']}>
-            <p>
-              <span>Coffee</span>
-              <span>80/100</span>
-            </p>
-            <progress value="80" max="100"></progress>
-          </div>
+          <CoffeeBar />
         </div>
         <table className={styles['info-table']}>
           <caption className="visually-hidden">Basic Information</caption>
