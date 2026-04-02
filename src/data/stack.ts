@@ -2,6 +2,7 @@ export type StackItem =
     | "html"
     | "css"
     | "javascript"
+    | "typescript"
     | "node"
     | "python"
     | "bootstrap"
@@ -28,7 +29,7 @@ export const stackData: { sections: StackSection[] } = {
         {
             "title": "Languages",
             "items": [
-                "html", "css", "javascript", "node", "python"
+                "html", "css", "javascript", "node", "typescript", "python"
             ]
         },
         {

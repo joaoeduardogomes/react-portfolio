@@ -68,11 +68,12 @@
 
 @media screen and (max-width: 700px) {
     .container {
-        grid-template-areas: "main main"
-                            "sidebar social"
+        grid-template-areas: "sidebar"
+                            "main"
+                            "social"
                             ;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 2fr auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr auto;
 
     }
 }
