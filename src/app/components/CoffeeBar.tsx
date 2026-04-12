@@ -20,7 +20,7 @@ export default function CoffeeBar() {
         <>
             <div className={styles['coffee-bar']}>
                 <p>
-                    <span>Coffee Level:</span>
+                    <span>Coffee Meter:</span>
                     <span>{coffeeValue}/100</span>
                 </p>
                 <div
@@ -29,7 +29,7 @@ export default function CoffeeBar() {
                     aria-valuenow={coffeeValue}
                     aria-valuemin={0}
                     aria-valuemax={100}
-                    aria-label="Coffee level"
+                    aria-label="Coffee meter"
                 >
                     <div
                         className={styles.fill}
