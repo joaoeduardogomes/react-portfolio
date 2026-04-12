@@ -6,28 +6,18 @@
         align-items: center;
         justify-content: space-between;
     }
+}
 
-    progress {
-        height: 16px;
-        appearance: none;
-        -webkit-appearance: none;
-        border: none;
-        border-radius: 5px;
-        overflow: hidden;
+.track {
+    height: 16px;
+    border-radius: 5px;
+    overflow: hidden;
+    outline: 2px solid v.$color-7;
+    background-color: #fff;
+}
 
-        outline: 2px solid v.$color-7;
-        background-color: #fff;
-
-        &::-webkit-progress-bar {
-            background-color: #fff;
-        }
-
-        &::-webkit-progress-value {
-            background-color: v.$color-7;
-        }
-
-        &::-moz-progress-bar {
-            background-color: v.$color-7;
-        }
-    }
+.fill {
+    height: 100%;
+    background-color: v.$color-7;
+    transition: width 800ms ease;
 }

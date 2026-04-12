@@ -23,7 +23,19 @@ export default function CoffeeBar() {
                     <span>Coffee Level:</span>
                     <span>{coffeeValue}/100</span>
                 </p>
-                <progress value={coffeeValue} max="100"></progress>
+                <div
+                    className={styles.track}
+                    role="progressbar"
+                    aria-valuenow={coffeeValue}
+                    aria-valuemin={0}
+                    aria-valuemax={100}
+                    aria-label="Coffee level"
+                >
+                    <div
+                        className={styles.fill}
+                        style={{ width: `${coffeeValue}%` }}
+                    />
+                </div>
             </div>
         </>
     )
