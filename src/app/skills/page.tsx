@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import styles from "./page.module.scss";
 
 export const metadata: Metadata = {
     title: "Skills",
@@ -9,15 +10,15 @@ export default function Skills() {
     return (
         <>
             <h1 className="visually-hidden">Skills</h1>
-            <h2>Human Languages</h2>
-            <ul>
+            <h2 className={styles.title}>Human Languages</h2>
+            <ul className={styles.list}>
                 <li>Portuguese — Native</li>
                 <li>English — Intermediate (ESET)</li>
                 <li>Japanese — Intermediate (JLPT N3)</li>
             </ul>
 
-            <h2>Soft Skills</h2>
-            <ul>
+            <h2 className={styles.title}>Soft Skills</h2>
+            <ul className={styles.list}>
                 <li>Clear and objective communication</li>
                 <li>Problem solving</li>
                 <li>Adaptability</li>

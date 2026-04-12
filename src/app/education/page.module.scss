@@ -4,13 +4,8 @@
     margin-bottom: 2rem;
 }
 
-h2.title {
-    color: v.$color-6;
-    font-weight: bold;
-}
-
 ul.list {
-    list-style: disc;
+    list-style: "• ";
 
     span.course-name {
         display: block;

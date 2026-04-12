@@ -5,6 +5,7 @@ body {
         background-color: v.$color-1;
         color: v.$color-white;
     }
+
     &::-moz-selection {
         background-color: v.$color-1;
         color: v.$color-white;
@@ -62,6 +63,13 @@ body {
         background-color: v.$color-6 !important;
         border-radius: 999px;
         border: 2px solid rgba(v.$color-4, 0.85);
+    }
+
+    h2 {
+        color: v.$color-6;
+        font-weight: bold;
+        font-size: 2rem;
+        margin-bottom: .5rem;
     }
 }
 
