@@ -1,0 +1,15 @@
+@use "@/styles/variables.scss" as v;
+
+.image {
+    margin: auto;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    box-shadow: rgba(v.$color-white, 0.24) 0px 3px 8px;
+}
+
+ul.list {
+    width: fit-content;
+    margin: auto;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
