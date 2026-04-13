@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import { experienceData } from "@/data/experience";
+import styles from "./page.module.scss";
 
 export const metadata: Metadata = {
     title: "Experience",
@@ -15,13 +16,13 @@ export default function Experience() {
                 <li key={item.id}>
                     <article>
                         <header>
-                            <h2>{item.role}</h2>
-                            <p>{item.organization}</p>
-                            <p>
+                            <h2 className={styles.title}>{item.role}</h2>
+                            <p className={styles['organization-name']}>{item.organization}</p>
+                            <p className={styles.period}>
                                 <time>{item.startDate}</time> — <time>{item.endDate ?? "Present"}</time>
                             </p>
                         </header>
-                        <p>{item.summary}</p>
+                        <p className={styles.summary}>{item.summary}</p>
                     </article>
                 </li>
             ))}

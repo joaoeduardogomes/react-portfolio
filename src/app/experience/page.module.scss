@@ -1,0 +1,19 @@
+@use "@/styles/variables" as v;
+
+h2.title {
+    color: v.$color-white;
+    font-size: 1.6rem;
+    margin-bottom: 0;
+}
+
+p.organization-name {
+    font-style: italic;
+}
+
+p.period {
+    font-size: .8rem;
+}
+
+p.summary {
+    margin: 1.2rem auto;
+}
