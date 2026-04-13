@@ -24,7 +24,7 @@ export default function About() {
             </tr>
             <tr>
               <th scope="row">Age</th>
-              <td>32</td>
+              <td>33</td>
             </tr>
             <tr>
               <th scope="row">Role</th>
