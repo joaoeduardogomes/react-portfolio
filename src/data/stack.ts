@@ -11,6 +11,7 @@ export type StackItem =
     | "sass"
     | "express"
     | "flask"
+    | "pandas"
     | "react"
     | "next.js"
     | "postgres"

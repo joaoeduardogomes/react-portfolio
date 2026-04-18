@@ -1,3 +1,68 @@
+@use "@/styles/variables" as v;
+
+.flex-area {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    .project-card {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        border: 3px solid v.$color-white;
+        border-radius: 8px;
+        width: 225px;
+        height: 300px;
+        padding: 1rem 0;
+
+        p.project-name {
+            text-align: center;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        .links {
+            display: flex;
+            justify-content: space-evenly;
+            
+            .btn {
+                width: 105px;
+                height: 36px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 2px solid transparent;
+                transition: all .3s ease-in-out;
+
+                &:hover {
+                    background-color: v.$color-2;
+                    color: v.$color-black;
+                    border-color: v.$color-black;
+                    border-radius: 4px;
+                }
+            }
+
+            .code-btn {
+                background-color: v.$color-1;
+            }
+
+            .demo-btn {
+                background-color: v.$color-5;
+                color: v.$color-black;
+            }
+        }
+
+        .tech-list {
+            display: flex;
+            flex-wrap: wrap;
+            margin: auto;
+            gap: .4rem;
+        }
+    }
+}
+
 .thumbnail {
     object-fit: cover;
+    margin: auto;
 }
