@@ -29,13 +29,13 @@ export const stackData: { sections: StackSection[] } = {
         {
             "title": "Languages",
             "items": [
-                "html", "css", "javascript", "node", "typescript", "python"
+                "html", "css", "javascript", "typescript", "python"
             ]
         },
         {
-            "title": "Frameworks & Libraries",
+            "title": "Technologies",
             "items": [
-                "bootstrap", "bulma", "tailwind", "sass", "express", "flask", "react", "next.js"
+                "bootstrap", "bulma", "tailwind", "sass", "node", "express", "flask", "react", "next.js"
             ]
         },
         {
