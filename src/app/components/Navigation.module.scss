@@ -1,4 +1,14 @@
 @use "@/styles/variables" as v;
+@use "@/styles/breakpoints" as bp;
+
+.nav-btn {
+    cursor: pointer;
+    display: none;
+}
+
+.open {
+    display: block;
+}
 
 .navbar {
     width: 100%;
@@ -23,7 +33,7 @@
                 width: 100%;
                 padding: .5rem 2rem;
                 font-weight: bold;
-                
+
                 transition: all .25s ease-in;
 
                 &:hover,
@@ -35,5 +45,31 @@
 
             }
         }
+    }
+}
+
+@include bp.md {
+    .nav-btn {
+        display: block;
+        margin: auto;
+    }
+
+    .navbar ul {
+        height: auto;
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transform: translateY(-8px);
+        pointer-events: none;
+        transition: max-height 0.25s ease, opacity 0.25s ease, transform 0.25s ease;
+    }
+
+    .navbar ul.open {
+        max-height: 500px;
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+        margin-top: 1rem;
+        font-size: 1.4rem;
     }
 }
