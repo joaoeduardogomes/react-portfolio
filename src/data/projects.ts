@@ -62,7 +62,7 @@ export const projectsData: ProjectItem[] = [
         },
         {
             id: "portfolio",
-            name: "This portfolio website",
+            name: "This portfolio website!",
             imageUrl: "/images/projects/portfolio.png",
             codeLink: "https://github.com/joaoeduardogomes/react-portfolio",
             demoLink: "/",
