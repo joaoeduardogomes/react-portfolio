@@ -1,4 +1,5 @@
 @use "@/styles/variables" as v;
+@use "@/styles/breakpoints" as bp;
 
 .info {
   display: flex;
@@ -76,8 +77,8 @@ div.description-wrap {
 }
 
 
-@media (max-width: 600px) {
-  .main {
-    padding: 48px 24px;
+@include bp.lg {
+  .info {
+    gap: 2rem;
   }
 }
