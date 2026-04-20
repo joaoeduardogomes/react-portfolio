@@ -1,0 +1,15 @@
+$bp-sm: 600px;
+$bp-md: 700px;
+$bp-lg: 1200px;
+
+@mixin sm {
+    @media (max-width: $bp-sm) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media (max-width: $bp-md) {
+        @content;
+    }
+}

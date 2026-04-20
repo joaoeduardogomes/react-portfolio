@@ -1,4 +1,5 @@
 @use "@/styles/variables" as v;
+@use "@/styles/breakpoints" as bp;
 
 body {
     &::selection {
@@ -15,15 +16,13 @@ body {
 .container {
     width: 100%;
     max-width: 1200px;
-    // min-height: 90vh;
-    // max-height: 100dvh;
-    height: 800px;
-    // min-height: 0;
+    max-height: 800px;
+    height: 90vh;
     margin: auto;
     font-family: var(--font-geist-sans);
     display: grid;
     grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr auto;
+    grid-template-rows: 1fr 1fr auto;
     grid-template-areas: "sidebar main"
         "sidebar main"
         "social social";
@@ -85,14 +84,14 @@ body {
     box-shadow: 3px 4px 8px 6px rgba(0, 0, 0, 0.444);
 }
 
-@media screen and (max-width: 700px) {
+@include bp.md {
     .container {
         grid-template-areas: "sidebar"
             "main"
             "social"
         ;
         grid-template-columns: 1fr;
-        grid-template-rows: 3fr auto;
+        grid-template-rows: auto 3fr auto;
 
     }
 }
