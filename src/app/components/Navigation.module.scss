@@ -62,6 +62,14 @@
         transform: translateY(-8px);
         pointer-events: none;
         transition: max-height 0.25s ease, opacity 0.25s ease, transform 0.25s ease;
+
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+
+        li {
+            width: fit-content;
+        }
     }
 
     .navbar ul.open {
