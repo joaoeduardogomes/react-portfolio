@@ -1,8 +1,8 @@
 @use "@/styles/variables" as v;
+@use "@/styles/breakpoints" as bp;
 
 h2.title {
     color: v.$color-white;
-    font-size: 1.6rem;
     margin-bottom: 0;
 }
 
@@ -16,4 +16,10 @@ p.period {
 
 p.summary {
     margin: 1.2rem auto;
+}
+
+@include bp.sm {
+    h2.title {
+        font-size: 1.5rem;
+    }
 }

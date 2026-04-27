@@ -12,9 +12,3 @@ ul.list {
     list-style-type: "• ";
     font-size: 1.2rem;
 }
-
-@include bp.sm {
-    h2.title {
-        font-size: 1.5rem;
-    }
-}
