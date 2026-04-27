@@ -82,3 +82,9 @@ div.description-wrap {
     gap: 2rem;
   }
 }
+
+@include bp.sm {
+  div.description-wrap {
+    margin: 2rem;
+  }
+}
