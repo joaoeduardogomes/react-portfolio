@@ -44,3 +44,14 @@
         }
     }
 }
+
+@media (max-width: 431px) {
+    h2.title {
+        text-align: center;
+    }
+    .section ul {
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+    }
+}
