@@ -57,11 +57,11 @@ export default function Social() {
                         className={styles.link}
                     >
                         <span className={styles['cv-text']}>CV</span>
-                        <span>https://cv-joaogomes.vercel.app/</span>
+                        <span className={styles['cv-link']}>https://cv-joaogomes.vercel.app/</span>
                     </Link>
                 </li>
             </ul>
-            <small id={styles.version}>Version 1.0.0</small>
+            <small className={styles.version}>Version 1.0.0</small>
         </>
     );
 }

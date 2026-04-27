@@ -1,4 +1,5 @@
 @use "@/styles/variables" as v;
+@use "@/styles/breakpoints" as bp;
 
 .social-links {
     list-style: none;
@@ -41,6 +42,8 @@
 
     span {
         transition: color 0.2s ease, text-shadow 0.2s ease;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
     }
 
     img {
@@ -51,13 +54,32 @@
         font-size: 2rem;
         font-weight: bold;
         transition: filter 0.2s ease, transform 0.3s ease;
+        max-width: fit-content;
     }
 }
 
 
-#version {
+.version {
     text-align: right;
     position: absolute;
     right: 10px;
     bottom: 10px;
+}
+
+@include bp.md {
+    .social-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .cv-link {
+        max-width: 70%;
+    }
+
+    .version {
+        display: block;
+        position: static;
+        margin: .5rem;
+    }
 }
