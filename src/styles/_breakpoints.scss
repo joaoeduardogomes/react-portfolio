@@ -1,6 +1,6 @@
-$bp-sm: 600px;
-$bp-md: 700px;
-$bp-lg: 940px;
+$bp-sm: 500px;
+$bp-md: 600px;
+$bp-lg: 700px;
 
 @mixin sm {
     @media (max-width: $bp-sm) {

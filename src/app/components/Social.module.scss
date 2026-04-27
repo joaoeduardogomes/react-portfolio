@@ -66,6 +66,14 @@
     bottom: 10px;
 }
 
+@media (max-width: 687px) {
+    .version {
+        display: block;
+        position: static;
+        margin: .5rem;
+    }
+}
+
 @include bp.md {
     .social-links {
         display: flex;
@@ -77,9 +85,5 @@
         max-width: 70%;
     }
 
-    .version {
-        display: block;
-        position: static;
-        margin: .5rem;
-    }
+
 }
