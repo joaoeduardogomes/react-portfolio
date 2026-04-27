@@ -93,6 +93,11 @@ body {
         ;
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto;
+    }
+}
 
+@include bp.sm {
+    .main {
+        padding: 1rem 2rem;
     }
 }
