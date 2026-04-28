@@ -44,7 +44,7 @@ export default function About() {
 
       <div className={styles['description-wrap']}>
         <p className={styles.description}>
-          I'm a juniot full-stack web developer. I like to keep the front end simple and intuitive. On the back end, I organize the logic and data — the parts most people never see. I work mainly with Python and Flask, and I use JavaScript for the front end.
+          I'm a junior full-stack web developer. I like to keep the front end simple and intuitive. On the back end, I organize the logic and data — the parts most people never see. I work mainly with Python and Flask, and I use JavaScript for the front end.
         </p>
 
         <span className={styles['presentation-tag']}>
