@@ -21,10 +21,10 @@ You will find pages about:
 
 ## Built with
 
-- Next.js 16
-- React 19
-- TypeScript
-- Sass / SCSS Modules
+![NextJS](https://img.shields.io/badge/NEXT.JS-%20?style=for-the-badge&logo=next.js&logoColor=white&color=black)
+![React](https://img.shields.io/badge/REACT-%20?style=for-the-badge&logo=react&logoColor=white&color=%23149ECA)
+![TypeScript](https://img.shields.io/badge/TYPESCRIPT-%20?style=for-the-badge&logo=typescript&logoColor=white&color=%232F74BF)
+![Sass](https://img.shields.io/badge/SASS-%20?style=for-the-badge&logo=sass&logoColor=white&color=%23CF649B)
 
 ## A few highlights
 
