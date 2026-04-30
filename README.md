@@ -1,5 +1,7 @@
 # João Eduardo Portfolio
 
+<img width="1241" height="837" alt="Screenshot from 2026-04-30 14-14-45" src="https://github.com/user-attachments/assets/48081bd8-7a84-4b38-affd-7c5bae5fb003" />
+
 ## Hey, you found my portfolio!
 
 This is the place where I put together a bit of who I am, what I build, and what I am learning as a web developer.
